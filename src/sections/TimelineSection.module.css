@@ -1,0 +1,127 @@
+.section {
+  padding: 1rem 0 4rem;
+}
+
+.inner {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1rem;
+}
+
+.progressCard,
+.list {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.progressCard {
+  padding: 1.15rem;
+  align-self: start;
+}
+
+.progressLabel {
+  margin: 0 0 0.5rem;
+  color: var(--ink-subtle);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.progressTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.progressTop strong {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+.progressTop span {
+  color: var(--ink-muted);
+  font-size: 0.88rem;
+}
+
+.progressTrack {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent-strong), var(--success));
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.item {
+  padding: 0.85rem 0.95rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.item h3 {
+  font-family: var(--font-sans);
+  font-size: 0.98rem;
+  margin-top: 0.35rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.date {
+  color: var(--ink-subtle);
+  font-size: 0.82rem;
+}
+
+.badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+}
+
+.completed {
+  color: var(--success);
+  background: rgba(61, 214, 140, 0.12);
+}
+
+.in-progress {
+  color: var(--warning);
+  background: rgba(245, 185, 66, 0.12);
+}
+
+.upcoming {
+  color: var(--ink-muted);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 860px) {
+  .panel {
+    grid-template-columns: 1fr;
+  }
+}

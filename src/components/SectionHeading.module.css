@@ -1,0 +1,35 @@
+.wrap {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: 2rem;
+}
+
+.center {
+  text-align: center;
+  justify-items: center;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.title {
+  font-size: clamp(1.65rem, 3.2vw, 2.35rem);
+  max-width: 22ch;
+}
+
+.center .title {
+  max-width: 24ch;
+}
+
+.description {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--ink-muted);
+  font-size: 1.02rem;
+}

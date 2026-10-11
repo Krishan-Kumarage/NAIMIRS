@@ -1,0 +1,79 @@
+.section {
+  padding: 1rem 0 4rem;
+}
+
+.inner {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.featured {
+  margin: 0 auto 1rem;
+  max-width: 720px;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--border-strong);
+  background: rgba(108, 140, 255, 0.06);
+}
+
+.featuredBadge {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.featured h3 {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.featured p {
+  margin: 0;
+  color: var(--ink-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  margin: 0;
+  padding: 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.card blockquote {
+  margin: 0 0 0.85rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+
+.card figcaption {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.card strong {
+  font-size: 0.92rem;
+}
+
+.card span {
+  color: var(--ink-subtle);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
