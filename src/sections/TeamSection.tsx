@@ -1,4 +1,4 @@
-import { teamSection } from "../content/siteContent";
+import { teamSection, type TeamMember } from "../content/siteContent";
 import { SectionHeading } from "../components/SectionHeading";
 import styles from "./TeamSection.module.css";
 
@@ -16,7 +16,7 @@ export function TeamSection() {
           align="center"
         />
         <div className={styles.grid}>
-          {teamSection.members.map((member) => (
+          {teamSection.members.map((member: TeamMember) => (
             <article
               key={member.id}
               className={`${styles.card} ${
