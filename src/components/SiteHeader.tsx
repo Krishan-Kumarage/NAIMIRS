@@ -22,7 +22,7 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}
+      className={`${styles.header} ${scrolled || menuOpen ? styles.scrolled : ""}`}
     >
       <div className={styles.inner}>
         <a href="#" className={styles.brand} onClick={() => setMenuOpen(false)}>
@@ -32,7 +32,11 @@ export function SiteHeader() {
 
         <nav className={styles.desktopNav} aria-label="Primary">
           {siteConfig.nav.map((item) => (
-            <a key={item.href} href={item.href} className={styles.navLink}>
+            <a
+              key={item.href}
+              href={item.href}
+              className={item.href === "#contact" ? styles.cta : styles.navLink}
+            >
               {item.label}
             </a>
           ))}

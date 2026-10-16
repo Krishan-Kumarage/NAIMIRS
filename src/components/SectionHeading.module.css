@@ -10,17 +10,23 @@
 }
 
 .eyebrow {
+  display: inline-flex;
+  width: fit-content;
   margin: 0;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: #82c75c;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--ink-muted);
 }
 
 .title {
-  font-size: clamp(1.65rem, 3.2vw, 2.35rem);
-  max-width: 22ch;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  max-width: 28ch;
 }
 
 .center .title {

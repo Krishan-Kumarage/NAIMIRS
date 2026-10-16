@@ -21,8 +21,23 @@
 }
 
 .supervisor {
-  border-color: rgba(108, 140, 255, 0.28);
-  background: linear-gradient(180deg, rgba(108, 140, 255, 0.08), var(--bg-card));
+  border-color: #038c48;
+  background: #82c75c;
+}
+
+.leader {
+  border-color: #038c48;
+  background: #82c75c;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: calc(var(--radius-md) - 4px);
+  margin-bottom: 0.9rem;
+  background: #04303b;
 }
 
 .role {

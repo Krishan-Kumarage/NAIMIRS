@@ -6,12 +6,14 @@ export function HeroSection() {
 
   return (
     <section className={styles.hero} aria-labelledby="hero-title">
+      <img className={styles.photo} src={hero.image} alt={hero.imageAlt} />
+      <div className={styles.scrim} />
       <div className={styles.copy}>
         <p className={styles.eyebrow}>{hero.eyebrow}</p>
         <h1 id="hero-title" className={styles.title}>
           {hero.title}
         </h1>
-        <p className={styles.description}>{hero.description}</p>
+        <p className={styles.tagline}>{hero.tagline}</p>
         <div className={styles.actions}>
           <a href={hero.primaryCta.href} className={styles.primaryBtn}>
             {hero.primaryCta.label}
@@ -20,36 +22,6 @@ export function HeroSection() {
             {hero.secondaryCta.label}
           </a>
         </div>
-        <div className={styles.platforms}>
-          <span>{hero.availabilityLabel}</span>
-          <ul>
-            {hero.platforms.map((platform) => (
-              <li key={platform}>{platform}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div className={styles.mockup} aria-hidden>
-        <div className={styles.mockupTop}>
-          <span />
-          <span />
-          <span />
-        </div>
-        <div className={styles.mockupBody}>
-          <div className={styles.mockupSidebar} />
-          <div className={styles.mockupContent}>
-            <div className={styles.mockupLineWide} />
-            <div className={styles.mockupLine} />
-            <div className={styles.mockupLine} />
-            <div className={styles.mockupCards}>
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-        </div>
-        <p className={styles.mockupUrl}>{siteConfig.domain}</p>
       </div>
     </section>
   );

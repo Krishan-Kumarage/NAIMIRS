@@ -1,12 +1,16 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
+  color: #e3eed4;
   border-bottom: 1px solid transparent;
-  transition: background 0.2s ease, border-color 0.2s ease, backdrop-filter 0.2s ease;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, backdrop-filter 0.2s ease;
 }
 
 .scrolled {
+  color: var(--ink);
   background: var(--surface-glass);
   backdrop-filter: blur(14px);
   border-bottom-color: var(--border);
@@ -33,11 +37,12 @@
 }
 
 .logoMark {
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), var(--success));
-  box-shadow: 0 0 0 4px var(--accent-soft);
+  width: 1.7rem;
+  height: 1.7rem;
+  flex: 0 0 auto;
+  background-color: currentColor;
+  -webkit-mask: url("/brand/leaf.png") center / contain no-repeat;
+  mask: url("/brand/leaf.png") center / contain no-repeat;
 }
 
 .desktopNav {
@@ -47,17 +52,36 @@
 }
 
 .navLink {
-  padding: 0.45rem 0.75rem;
+  padding: 0.4rem 0.55rem;
   border-radius: 999px;
   text-decoration: none;
-  color: var(--ink-muted);
-  font-size: 0.92rem;
+  color: inherit;
+  font-size: 0.88rem;
   font-weight: 500;
 }
 
 .navLink:hover {
-  color: var(--ink);
-  background: rgba(255, 255, 255, 0.05);
+  background: #038c48;
+}
+
+.scrolled .navLink:hover {
+  background: #82c75c;
+}
+
+.cta {
+  margin-left: 0.35rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.scrolled .cta {
+  background: #038c48;
+  border-color: #038c48;
+  color: #e3eed4;
 }
 
 .menuBtn {
@@ -65,9 +89,9 @@
   width: 42px;
   height: 42px;
   border-radius: 10px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--ink);
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
   cursor: pointer;
 }
 
@@ -135,8 +159,8 @@
     padding: 0.75rem 0.85rem;
     border-radius: var(--radius-sm);
     text-decoration: none;
-    color: var(--ink);
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border);
+    color: #04303b;
+    background: #82c75c;
+    border: 1px solid #04303b;
   }
 }

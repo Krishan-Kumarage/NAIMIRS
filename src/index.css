@@ -1,28 +1,30 @@
 :root {
-  --bg: #070b14;
-  --bg-elevated: #0f1629;
-  --bg-card: #121c32;
-  --bg-card-hover: #17233d;
-  --surface-glass: rgba(15, 22, 41, 0.72);
-  --ink: #f3f6fc;
-  --ink-muted: #a8b3c7;
-  --ink-subtle: #7b879e;
-  --accent: #6c8cff;
-  --accent-strong: #4b6fff;
-  --accent-soft: rgba(108, 140, 255, 0.14);
-  --accent-glow: rgba(108, 140, 255, 0.35);
-  --success: #3dd68c;
-  --warning: #f5b942;
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.14);
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
-  --header-h: 72px;
+  --bg: #e3eed4;
+  --bg-elevated: #e3eed4;
+  --bg-card: #e3eed4;
+  --bg-card-hover: #82c75c;
+  --surface-muted: #82c75c;
+  --surface-glass: #e3eed4;
+  --ink: #04303b;
+  --ink-muted: #04303b;
+  --ink-subtle: #04303b;
+  --lime: #82c75c;
+  --accent: #038c48;
+  --accent-strong: #04303b;
+  --accent-soft: #82c75c;
+  --accent-glow: #82c75c;
+  --success: #038c48;
+  --warning: #04303b;
+  --border: #038c48;
+  --border-strong: #04303b;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --shadow: none;
+  --header-h: 76px;
   --container: min(1120px, calc(100% - 2.5rem));
   --font-sans: "Instrument Sans", system-ui, sans-serif;
-  --font-serif: "Libre Baskerville", Georgia, serif;
+  --font-serif: "Instrument Sans", system-ui, sans-serif;
 }
 
 *,
@@ -42,10 +44,7 @@ body {
   font-family: var(--font-sans);
   line-height: 1.55;
   color: var(--ink);
-  background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(108, 140, 255, 0.18), transparent 55%),
-    radial-gradient(900px 500px at 90% 0%, rgba(61, 214, 140, 0.08), transparent 50%),
-    var(--bg);
+  background: var(--bg);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -54,9 +53,10 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-serif);
-  font-weight: 700;
-  line-height: 1.15;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
   margin: 0;
 }
 
@@ -76,6 +76,10 @@ textarea {
 
 #root {
   min-height: 100vh;
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--header-h) + 0.5rem);
 }
 
 .sr-only {

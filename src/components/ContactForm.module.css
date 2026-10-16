@@ -31,7 +31,7 @@
   padding: 0.72rem 0.85rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-strong);
-  background: rgba(255, 255, 255, 0.03);
+  background: #82c75c;
   color: var(--ink);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .fieldError {
-  color: #ff8b8b;
+  color: #04303b;
   font-size: 0.82rem;
 }
 
@@ -56,11 +56,11 @@
   border: none;
   border-radius: 999px;
   padding: 0.75rem 1.35rem;
-  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
-  color: white;
+  background: var(--lime);
+  color: var(--ink);
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 10px 30px var(--accent-glow);
+  box-shadow: none;
 }
 
 .submit:disabled {
@@ -71,16 +71,16 @@
 .success {
   padding: 0.75rem 0.9rem;
   border-radius: var(--radius-sm);
-  background: rgba(61, 214, 140, 0.12);
-  color: var(--success);
+  background: #038c48;
+  color: #e3eed4;
   font-weight: 600;
 }
 
 .errorBanner {
   padding: 0.75rem 0.9rem;
   border-radius: var(--radius-sm);
-  background: rgba(255, 120, 120, 0.12);
-  color: #ffb4b4;
+  background: #04303b;
+  color: #e3eed4;
 }
 
 @media (max-width: 640px) {

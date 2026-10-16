@@ -47,7 +47,7 @@
 }
 
 .detailBlock a {
-  color: var(--accent);
+  color: var(--accent-strong);
   text-decoration: none;
 }
 

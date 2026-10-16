@@ -21,8 +21,16 @@ export function TeamSection() {
               key={member.id}
               className={`${styles.card} ${
                 member.variant === "supervisor" ? styles.supervisor : ""
-              }`}
+              } ${member.variant === "leader" ? styles.leader : ""}`}
             >
+              {member.photo ? (
+                <img
+                  className={styles.photo}
+                  src={member.photo}
+                  alt=""
+                  style={{ objectPosition: member.photoPosition ?? "center 20%" }}
+                />
+              ) : null}
               <p className={styles.role}>{member.role}</p>
               <h3>{member.name}</h3>
               <p className={styles.focus}>{member.focus}</p>

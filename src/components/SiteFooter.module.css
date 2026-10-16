@@ -1,7 +1,7 @@
 .footer {
   margin-top: 4rem;
-  border-top: 1px solid var(--border);
-  background: rgba(0, 0, 0, 0.22);
+  color: #e3eed4;
+  background: #04303b;
 }
 
 .grid {
@@ -23,14 +23,16 @@
 }
 
 .logoMark {
-  width: 0.65rem;
-  height: 0.65rem;
-  border-radius: 999px;
-  background: var(--accent);
+  width: 1.55rem;
+  height: 1.55rem;
+  flex: 0 0 auto;
+  background-color: var(--lime);
+  -webkit-mask: url("/brand/leaf.png") center / contain no-repeat;
+  mask: url("/brand/leaf.png") center / contain no-repeat;
 }
 
 .blurb {
-  color: var(--ink-muted);
+  color: #82c75c;
   max-width: 34ch;
   font-size: 0.95rem;
 }
@@ -40,7 +42,7 @@
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ink-subtle);
+  color: #82c75c;
   margin-bottom: 0.75rem;
 }
 
@@ -53,13 +55,13 @@
 }
 
 .linkList a {
-  color: var(--ink-muted);
+  color: #e3eed4;
   text-decoration: none;
   font-size: 0.95rem;
 }
 
 .linkList a:hover {
-  color: var(--ink);
+  color: #82c75c;
 }
 
 .bottom {
@@ -71,7 +73,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  color: var(--ink-subtle);
+  color: #82c75c;
   font-size: 0.88rem;
 }
 
@@ -81,12 +83,12 @@
 }
 
 .legal a {
-  color: var(--ink-subtle);
+  color: #82c75c;
   text-decoration: none;
 }
 
 .legal a:hover {
-  color: var(--ink-muted);
+  color: #82c75c;
 }
 
 @media (max-width: 900px) {
