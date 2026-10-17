@@ -10,11 +10,31 @@ export const siteConfig = {
   tagline: "A profit-driven smart farming app for Scotch Bonnet peppers",
   domain: "www.naimiris.example",
   hero: {
-    eyebrow: "Smart farming",
+    eyebrow: "SMART FARMING",
     title: "NAIMIRIS",
     tagline: "A profit-driven smart farming app for Scotch Bonnet peppers",
-    image: "/images/harvest.jpg",
-    imageAlt: "A farmer harvesting ripe peppers into a woven basket",
+    collage: [
+      {
+        id: "hand-crate",
+        src: "/images/hero/pepper-hand-crate.jpg",
+        alt: "Orange Scotch Bonnet pepper held above a crate of harvested peppers",
+      },
+      {
+        id: "dew-plant",
+        src: "/images/hero/pepper-dew-plant.jpg",
+        alt: "Red pepper with water droplets on the plant",
+      },
+      {
+        id: "ripening",
+        src: "/images/hero/peppers-ripening-dark.jpg",
+        alt: "Peppers ripening from green to red on a dark background",
+      },
+      {
+        id: "palm",
+        src: "/images/hero/pepper-palm.jpg",
+        alt: "Red Scotch Bonnet pepper resting in an open palm",
+      },
+    ],
     primaryCta: { label: "The problem", href: "#problem" },
     secondaryCta: { label: "Contact us", href: "#contact" },
   },
